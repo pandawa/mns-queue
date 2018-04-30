@@ -21,9 +21,9 @@ use Pandawa\Mns\Connector\MnsConnector;
  */
 final class PandawaMnsModule extends AbstractModule
 {
-    protected function init(): void
+    protected function build(): void
     {
-        $this->registerConnector($this->app->get('queue'));
+        $this->registerConnector($this->app['queue']);
     }
 
     /**
