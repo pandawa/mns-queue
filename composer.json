@@ -1,0 +1,47 @@
+{
+    "name": "pandawa/mns-queue",
+    "description": "Aliyun MNS Queue Driver For Pandawa",
+    "keywords": [
+        "laravel",
+        "pandawa",
+        "mns",
+        "queue"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Iqbal Maulana",
+            "email": "iq.bluejack@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "pandawa/pandawa": "~0.1",
+        "lokielse/aliyun-open-api-mns": "^1.0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pandawa\\Mns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Pandawa\\Mns\\PandawaMnsModule"
+            ]
+        }
+    }
+}
